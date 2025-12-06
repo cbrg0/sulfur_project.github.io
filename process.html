@@ -3,16 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Процесс производства серной кислоты</title>
+  <title>Производство серной кислоты в Казахстане</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      line-height: 1.6; 
-      margin: 20px; 
-      background-color: #f9f9f9; 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #f9f9f9;
       color: #333;
+      scroll-behavior: smooth;
     }
-    h1, h2, h3 { color: #2a2a2a; }
+
+    /* Шапка */
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    /* Навигация */
+    nav {
+      background-color: #0055a0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 50px;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Основной контент */
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 { color: #0055a0; }
+
     .apparatus { 
       background: #fff; 
       border-left: 5px solid #003366; 
@@ -21,7 +67,7 @@
       border-radius: 5px; 
       box-shadow: 1px 1px 6px rgba(0,0,0,0.1); 
     }
-    h2 { margin-top: 0; color: #0055a0; }
+
     .formula { 
       font-family: "Courier New", monospace; 
       background: #e8f3ff; 
@@ -29,9 +75,10 @@
       border-radius: 3px; 
       display: inline-block; 
     }
+
     p, ul { line-height: 1.5; }
     ul { margin: 10px 0 10px 20px; }
-    .note { color: #555; font-size: 0.9em; }
+
     .image-placeholder { 
       width: 100%; 
       height: 400px; 
@@ -49,78 +96,97 @@
 </head>
 <body>
 
-  <h1>Процесс производства серной кислоты</h1>
+<header>
+  <h1>Производство серной кислоты (<span style="font-family:'Courier New', monospace;">H₂SO₄</span>)</h1>
+</header>
 
-  <h2>Общий процесс производства</h2>
-  <p>Процесс производства серной кислоты, в основном, основан на <strong>контактном методе</strong>, который включает:</p>
+<nav>
+  <a href="#overview">Общее описание</a>
+  <a href="#principles">Принципы</a>
+  <a href="#diagram">Схема</a>
+  <a href="#apparatus">Аппараты</a>
+</nav>
+
+<main>
+
+<section id="overview">
+  <h2>Общее описание процесса производства серной кислоты</h2>
+  <p>Производство серной кислоты основано на <strong>контактном методе</strong>, который является промышленным стандартом. Основные этапы включают:</p>
   <ul>
-    <li>Сжигание серы или сульфидов для получения <strong>SO₂</strong></li>
-    <li>Очистку и осушку газов</li>
-    <li>Каталитическое окисление до <strong>SO₃</strong> (катализатор <strong>V₂O₅</strong>)</li>
-    <li>Поглощение SO₃ концентрированной кислотой с образованием олеума</li>
-    <li>Разбавление олеума водой до нужной концентрации серной кислоты</li>
+    <li>Сжигание серы или серного колчедана для получения диоксида серы (<span class="formula">SO₂</span>).</li>
+    <li>Очистку и осушку газов перед каталитической стадией.</li>
+    <li>Каталитическое окисление <span class="formula">SO₂</span> до триоксида серы (<span class="formula">SO₃</span>) на ванадиевом катализаторе (<span class="formula">V₂O₅</span>).</li>
+    <li>Поглощение <span class="formula">SO₃</span> концентрированной серной кислотой для получения олеума.</li>
+    <li>Разбавление олеума водой до нужной концентрации товарной серной кислоты (<span class="formula">H₂SO₄</span>).</li>
   </ul>
+</section>
 
-  <p><strong>Основные принципы включают в себя:</strong></p>
+<section id="principles">
+  <h2>Основные принципы производства</h2>
   <ul>
-    <li>Катализ - использование ванадиевого катализатора (V<sub>2</sub>O<sub>5</sub>) для ускорения окисления SO<sub>2</sub> → SO<sub>3</sub>.</li>
-    <li>Непрерывность процесса - обеспечение постоянного потока сырья и газов.</li>
-    <li>Противоток и максимизация площади контакта - оптимизация взаимодействия газов и жидкостей для высокой конверсии.</li>
-    <li>Теплообмен - использование выделяющегося тепла для подогрева газов и производства пара.</li>
-    <li>Рациональное использование сырья (безотходное производство) - переработка побочных продуктов металлургии и нефтегазовых производств.</li>
+    <li><strong>Катализ:</strong> Использование ванадиевого катализатора ускоряет окисление <span class="formula">SO₂</span> до <span class="formula">SO₃</span>.</li>
+    <li><strong>Непрерывность процесса:</strong> Обеспечивает постоянный поток сырья и газов.</li>
+    <li><strong>Противоток и максимальная площадь контакта:</strong> Оптимизирует взаимодействие газов и жидкостей для высокой конверсии.</li>
+    <li><strong>Теплообмен:</strong> Использование тепла экзотермической реакции для подогрева поступающих газов и производства пара.</li>
+    <li><strong>Рациональное использование сырья:</strong> Безотходная переработка побочных продуктов металлургии и нефтегазовой промышленности.</li>
   </ul>
+</section>
 
-  <!-- Место для схемы/картинки аппаратуры -->
-  <div class="image-placeholder">
-    Сюда можно вставить схему или изображение установки
+<section id="diagram">
+  <div class="image-placeholder">Сюда можно вставить схему или изображение установки</div>
+</section>
+
+<section id="apparatus">
+  <h2>Аппараты производства серной кислоты</h2>
+
+  <div class="apparatus">
+    <h3>1. Печь для обжига серного колчедана (кипящий слой)</h3>
+    <p><strong>Что происходит:</strong> Сырьё — серный колчедан (<span class="formula">FeS₂</span>) — обжигается кислородом воздуха. Частицы «кипят» в газовом потоке.</p>
+    <p><strong>Химическая реакция:</strong> <span class="formula">4FeS₂ + 11O₂ → 2Fe₂O₃ + 8SO₂ + тепло</span></p>
+    <p><strong>Функция:</strong> Производство <span class="formula">SO₂</span> — основного сырья, выделение тепла.</p>
   </div>
 
-  <!-- Аппараты производства серной кислоты -->
-  <section class="apparatus">
-    <h2>1. Печь для обжига серного колчедана (кипящий слой)</h2>
-    <p><strong>Что происходит:</strong> Сырьё — серный колчедан (<span class="formula">FeS₂</span>) — обжигается кислородом воздуха. Частицы «кипят» в газовом потоке, что обеспечивает равномерное обгорание.</p>
-    <p><strong>Химическая реакция:</strong> <span class="formula">4FeS₂ + 11O₂ → 2Fe₂O₃ + 8SO₂ + тепло</span></p>
-    <p><strong>Функция:</strong> Производство диоксида серы (<span class="formula">SO₂</span>) — основного сырья для синтеза серной кислоты, и выделение тепла для последующих стадий.</p>
-  </section>
+  <div class="apparatus">
+    <h3>2. Циклон</h3>
+    <p><strong>Что происходит:</strong> Газовый поток закручивается, крупные частицы пыли отделяются центробежной силой.</p>
+    <p><strong>Функция:</strong> Очистка газа от крупных частиц.</p>
+  </div>
 
-  <section class="apparatus">
-    <h2>2. Циклон</h2>
-    <p><strong>Что происходит:</strong> Газовый поток из печи поступает в циклон, где закручивается спирально.</p>
-    <p><strong>Функция:</strong> Центробежные силы отделяют крупные частицы пыли и несгоревший колчедан, которые собираются в бункере.</p>
-  </section>
+  <div class="apparatus">
+    <h3>3. Электрический фильтр</h3>
+    <p><strong>Что происходит:</strong> Газ проходит через электростатическое поле, мелкая пыль оседает на электродах.</p>
+    <p><strong>Функция:</strong> Защита катализатора и очистка газа.</p>
+  </div>
 
-  <section class="apparatus">
-    <h2>3. Электрический фильтр</h2>
-    <p><strong>Что происходит:</strong> Газ проходит через электростатическое поле, где мелкие частицы пыли заряжаются и оседают на электродах.</p>
-    <p><strong>Функция:</strong> Эффективная очистка газа перед контактным аппаратом для защиты катализатора.</p>
-  </section>
+  <div class="apparatus">
+    <h3>4. Сушильная башня</h3>
+    <p><strong>Что происходит:</strong> Газ контактирует с концентрированной серной кислотой, удаляется влага.</p>
+    <p><strong>Функция:</strong> Подготовка газа для контактного аппарата.</p>
+  </div>
 
-  <section class="apparatus">
-    <h2>4. Сушильная башня</h2>
-    <p><strong>Что происходит:</strong> Очищенный газ контактирует с концентрированной серной кислотой или осушающим агентом для удаления влаги.</p>
-    <p><strong>Функция:</strong> Удаление воды из газа, так как влага снижает эффективность каталитического окисления <span class="formula">SO₂</span>.</p>
-  </section>
+  <div class="apparatus">
+    <h3>5. Теплообменник</h3>
+    <p><strong>Что происходит:</strong> Охлаждение газа до 400–450 °C, рекуперация тепла.</p>
+    <p><strong>Функция:</strong> Защита катализатора и использование тепла процесса.</p>
+  </div>
 
-  <section class="apparatus">
-    <h2>5. Теплообменник (часть контактного аппарата)</h2>
-    <p><strong>Что происходит:</strong> Горячий газ охлаждается до оптимальной температуры для катализатора (около 400–450 °C). Тепло реакции используется для подогрева поступающего газа и производства пара.</p>
-    <p><strong>Функция:</strong> Рекуперация тепла и защита катализатора от перегрева.</p>
-  </section>
-
-  <section class="apparatus">
-    <h2>6. Контактный аппарат</h2>
-    <p><strong>Что происходит:</strong> Очищенный и осушенный <span class="formula">SO₂</span> окисляется до <span class="formula">SO₃</span> на катализаторе <span class="formula">V₂O₅</span>.</p>
+  <div class="apparatus">
+    <h3>6. Контактный аппарат</h3>
+    <p><strong>Что происходит:</strong> Каталитическое окисление <span class="formula">SO₂</span> → <span class="formula">SO₃</span> на <span class="formula">V₂O₅</span>.</p>
     <p><strong>Химическая реакция:</strong> <span class="formula">2SO₂ + O₂ ⇌ 2SO₃ + тепло</span></p>
-    <p><strong>Функция:</strong> Основная стадия синтеза серной кислоты, достижение высокого выхода <span class="formula">SO₃</span>.</p>
-  </section>
+    <p><strong>Функция:</strong> Основная стадия синтеза серной кислоты.</p>
+  </div>
 
-  <section class="apparatus">
-    <h2>7. Поглотительная башня</h2>
-    <p><strong>Что происходит:</strong> Газ <span class="formula">SO₃</span> поглощается концентрированной серной кислотой (98–99%) и образует олеум:</p>
-    <p><strong>Химическая реакция:</strong> <span class="formula">SO₃ + H₂SO₄ → H₂S₂O₇</span></p>
-    <p>Затем олеум разбавляют водой до получения товарной серной кислоты нужной концентрации.</p>
-    <p><strong>Функция:</strong> Получение серной кислоты без образования тумана, контроль концентрации и качества продукта.</p>
-  </section>
+  <div class="apparatus">
+    <h3>7. Поглотительная башня</h3>
+    <p><strong>Что происходит:</strong> Поглощение <span class="formula">SO₃</span> концентрированной кислотой, образование олеума (<span class="formula">H₂S₂O₇</span>), последующее разбавление водой.</p>
+    <p><strong>Функция:</strong> Получение товарной серной кислоты без образования тумана.</p>
+  </div>
+
+</section>
+
+</main>
 
 </body>
 </html>
+ 
